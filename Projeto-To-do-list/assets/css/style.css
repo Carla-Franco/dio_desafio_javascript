@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient( 90deg, rgb(223, 81, 159, 1) 0%, rgb(113, 6, 139) 100% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 40%;
+    padding: 30px 40px;
+    min-width: 500px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.new-container {
+    padding: 30px 20px;
+    display: flex;
+}
+
+.new-container input {
+    flex: 3;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;    
+}
+
+.new-container input:focus {
+    outline: none;
+    border-color: rgb(83, 11, 131);
+}
+
+.adiciona-tarefa {
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background-color: rgb(83, 11, 131);
+    color: #fff;
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.container-itens {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.object-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.object-item i {
+    background-color: rgb(83, 11, 131);
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;    
+}
+
+.object-item i:hover {
+    cursor: pointer;
+}
+
+/* Utils */
+.error {
+    border: 2px solid red !important;
+}
+
+.error::placeholder {
+    color: red;
+}
+
+.completed {
+    text-decoration: line-through;
+}
